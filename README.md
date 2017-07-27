@@ -1,6 +1,4 @@
 <h1 align="center">
-  <img src="https://avatars1.githubusercontent.com/u/29598503?v=3&s=256" alt="Project">
-  <br />
   slack-term
 </h1>
 
@@ -29,9 +27,7 @@ distributions.</p>
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
-<!-- Uncomment and modify this when you have a screenshot
-![slack-term](screenshot.png?raw=true "my-snap-name")
--->
+![slack-term](https://github.com/erroneousboat/slack-term/blob/master/screenshot.png?raw=true "slack-term")
 
 <p align="center">Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.png" align="top" width="24" /> with :gift_heart: by Snapcrafters</p>
 
@@ -47,7 +43,7 @@ upstream so slack-term can authoritatively publish future releases.
   - [x] Update logos and references to `[Project]` and `[my-snap-name]`
   - [x] Create a snap that runs in `devmode`
   - [x] Register the snap in the store, **using the preferred upstream name**
-  - [ ] Add a screenshot to this `README.md`
+  - [x] Add a screenshot to this `README.md`
   - [x] Publish the `devmode` snap in the Snap store edge channel
   - [x] Add install instructions to this `README.md`
   - [x] Update snap store metadata, icons and screenshots
