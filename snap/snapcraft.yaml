@@ -24,6 +24,6 @@ parts:
   slack-term:
     after: [go]
     source: https://github.com/erroneousboat/slack-term.git
-    source-tag: 'v0.3.0'
+    source-tag: 'v0.3.2'
     plugin: go
     go-importpath: github.com/erroneousboat/slack-term
