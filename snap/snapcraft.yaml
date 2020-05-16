@@ -29,7 +29,7 @@ parts:
     override-pull: |
       snapcraftctl pull
       last_committed_tag="$(git describe --tags --abbrev=0)"
-      last_released_tag="$(snap info slack-term | awk '$1 == "beta:" { print $2 }')"
+      last_released_tag="$(snap info slack-term | awk '$1 == "latest/beta:" { print $2 }')"
       # If the latest tag from the upstream project has not been released to
       # beta, build that tag instead of master.
       if [ "${last_committed_tag}" != "${last_released_tag}" ]; then
