@@ -7,25 +7,22 @@ description: |
   * Contents detailed at https://github.com/erroneousboat/slack-term
   * slack-term --config $HOME/snap/slack-term/current/slack-term.json
 adopt-info: slack-term
-
+base: core20
 grade: stable
 confinement: strict
 
 apps:
   slack-term:
-    command: slack-term
+    command: bin/slack-term
     plugs:
       - network
       - home
 
 parts:
-  go:
-    source-tag: go1.10.4
   slack-term:
-    after: [go]
     source: https://github.com/erroneousboat/slack-term.git
     plugin: go
-    go-importpath: github.com/erroneousboat/slack-term
+    go-channel: latest/stable
     override-pull: |
       snapcraftctl pull
       last_committed_tag="$(git describe --tags --abbrev=0)"
